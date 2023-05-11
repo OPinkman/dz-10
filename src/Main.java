@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        BankApplication bankApplication = new BankApplication();
+        bankApplication.check("accountId000", 50, "USD");
+        bankApplication.check("accountId003", 250, "HRV");
+        bankApplication.check("accountId001", 50, "EUR");
+        bankApplication.check("accountId001", 50, "USD");
+        bankApplication.check("accountId001", 50, "USD");
     }
 }
